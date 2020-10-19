@@ -1,0 +1,87 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #000;
+  color: #FFF;
+}
+a, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif TC', serif;
+}
+p {
+  color: #AAA;
+  word-break: break-all;
+}
+hr {
+  border-color: rgba(255,255,255,0.2);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #242A30;
+  outline: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dac400;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CAB400;
+}
+
+#about {
+  overflow: hidden;
+  height: 100vh;
+}
+
+canvas {
+  z-index: -999;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#works {
+  background-color: rgba(0,0,0,0.8);
+}
+#works .work-block {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid #666;
+  transition: .3s;
+}
+#works .work-block:hover {
+  background-color: rgba(0,0,0,1);
+  border: 1px solid #AAA;
+}
+#works .work-block .img-block {
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  width: 0;
+  padding-top: 100%;
+  padding-left: 100%;
+  transition: .3s;
+  filter: grayscale(100%);
+}
+#works .work-block:hover .img-block {
+  filter: grayscale(0%);
+}
+#works .work-block p {
+  margin: 1em;
+  transition: .3s;
+}
+#works .work-block:hover a {
+  text-decoration: none;
+}
+#works .work-block a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  #works .work-block .img-block {
+    filter: grayscale(0%);
+  }
+}
