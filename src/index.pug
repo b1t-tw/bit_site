@@ -7,10 +7,17 @@ html(lang="zh-Hant-TW")
     include nav.pug
     canvas#canvas Canvas is not supported in your browser.
     canvas#canvas2 Canvas is not supported in your browser.
-    .container-fluid.p-2#about
+    .container-fluid#head
       .row.h-100.align-items-center.justify-content-center
         .col-8.text-center.mb-4
           h4 a bit of creative, create bytes of life
+    
+    .container-fluid#about
+      .row.h-100.align-items-center.justify-content-center
+        .col-md-8
+          p.p-2.text-center 
+            | 「位元創意」成立於2020秋冬之際，前身為高任翔之個人工作室「光軌創曳」，主要業務為資訊整合、系統開發、
+            | 展場及演出裝置設計開發等
     .container-fluid.p-2#works
       mixin work(val)
         .col-md-4.p-2
@@ -26,13 +33,13 @@ html(lang="zh-Hant-TW")
       hr
       h1.text-center With Arts
       hr            
-      .row.px-md-5.mx-md-5.mb-5
+      .row.mb-5
         each val, index in _work_data["arts"]
           +work(val)
       hr
       h1.text-center With Techs
       hr            
-      .row.px-md-5.mx-md-5.mb-5
+      .row.mb-5
         each val, index in _work_data["techs"]
           +work(val)
     include footer.pug
