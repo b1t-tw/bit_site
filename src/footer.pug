@@ -20,5 +20,5 @@ script.
   });
   
   $(window).scroll(function(){
-    $("#about, #works").css({"background-position": `center ${$(this).scrollTop()/20}px`})
+    $("#about, #works").css({"background-position": `center ${-$(this).scrollTop()/5}px`})
   });
