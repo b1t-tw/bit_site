@@ -7,12 +7,13 @@ html(lang="zh-Hant-TW")
   link(rel="stylesheet" href="/assets/css/index.css")
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     include nav.pug
-    canvas#canvas Canvas is not supported in your browser.
-    canvas#canvas2 Canvas is not supported in your browser.
-    .container-fluid#head
+    //canvas#canvas Canvas is not supported in your browser.
+    //canvas#canvas2 Canvas is not supported in your browser.
+    .container#head
       .row.h-100.align-items-center.justify-content-center
-        .col-8.text-center.mb-4
-          h4 a bit of creative, create bytes of life
+        .col-10.col-lg-6.text-center.mb-4
+          video( autoplay muted loop src="/assets/logo_anim.mp4" style="width: 100%;")
+          //h4 a bit of creative, create bytes of life
     
     .container-fluid#about
       .row.h-100.align-items-center.justify-content-center
@@ -45,4 +46,4 @@ html(lang="zh-Hant-TW")
         each val, index in _work_data["techs"]
           +work(val)
     include footer.pug
-    script(src="/assets/js/matrix.js")
+    //script(src="/assets/js/matrix.js")

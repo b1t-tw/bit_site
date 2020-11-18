@@ -39,14 +39,16 @@ function Point(x, y) {
 Point.prototype.draw = function(ctx) {
 
   this.value = charArr[randomInt(0, charArr.length)].toUpperCase();
-  if(this.y < 0)
+  if(this.y < 0) {
     this.speed = randomFloat(2, 8);
+    this.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+  }
 
   ctx2.fillStyle = "rgba(255,255,255,0.8)";
   ctx2.font = fontSize + "px san-serif";
   ctx2.fillText(this.value, this.x, this.y);
 
-  ctx.fillStyle = "#0F0";
+  ctx.fillStyle = this.color;
   ctx.font = fontSize + "px san-serif";
   ctx.fillText(this.value, this.x, this.y);
 
@@ -66,7 +68,7 @@ for (var i = 0; i < maxColums; i++) {
 
 var update = function() {
 
-  ctx.fillStyle = "rgba(0,0,0,0.05)";
+  ctx.fillStyle = "rgba(255,255,255,0.1)";
   ctx.fillRect(0, 0, cw, ch);
 
   ctx2.clearRect(0, 0, cw, ch);
