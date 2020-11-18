@@ -9,7 +9,7 @@
       h5 聯絡我們 / Contacts
       a 高任翔 | SeanGau
       br
-      a rrtw0627@gmail.com
+      a sean@b1t.tw
       br
       a +886 975722611
 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous")
@@ -18,10 +18,11 @@ script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 //script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
 script.
   $(function(){
-    $('.nav-link').click(function(event) {
+    $('.nav-link').on('click', function(event) {
+      var scroll_target = $(event.target).attr("href");
+      if(scroll_target == '#' || scroll_target.includes("/#"))
+        return;
       event.preventDefault();
-      var scroll_target = $(event.target).attr("href").replace("/","");
-      //console.log(scroll_target);
       $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').outerHeight(true)},300);
     });
     

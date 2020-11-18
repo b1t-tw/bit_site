@@ -1,7 +1,9 @@
 - _work_data = work_data
+- _home = true
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
   include header.pug
+  link(rel="stylesheet" href="/assets/css/base.css")
   link(rel="stylesheet" href="/assets/css/index.css")
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     include nav.pug
@@ -16,8 +18,8 @@ html(lang="zh-Hant-TW")
       .row.h-100.align-items-center.justify-content-center
         .col-md-8
           p.p-2.text-center 
-            | 「位元創意」成立於2020秋冬之際，前身為高任翔之個人工作室「光軌創曳」，主要業務為資訊整合、系統開發、
-            | 展場及演出裝置設計開發等
+            | 「位元創意」成立於2020秋冬之際，前身為專注於led道具開發之工作室「光軌創曳」，不斷在藝術、設計與電機、資訊領域間找尋平衡，有豐富的藝創合作經驗，
+            | 主要業務為資訊整合、直播技術、展場及演出裝置設計開發等
     .container-fluid.p-2#works
       mixin work(val)
         .col-md-4.p-2
@@ -33,13 +35,13 @@ html(lang="zh-Hant-TW")
       hr
       h1.text-center With Arts
       hr            
-      .row.mb-5
+      .row.rwd-row.mb-5
         each val, index in _work_data["arts"]
           +work(val)
       hr
       h1.text-center With Techs
       hr            
-      .row.mb-5
+      .row.rwd-row.mb-5
         each val, index in _work_data["techs"]
           +work(val)
     include footer.pug

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+html(lang="zh-Hant-TW")
+  include ../header.pug
+  link(rel="stylesheet" href="/assets/css/base.css")
+  link(rel="stylesheet" href="/assets/css/services.css")
+  body
+    include ../nav.pug
+    .container
+      .bg-dark-transparent.p-4
+        h1 直播技術
+        p.
+          位元創意提供最實惠的直播技術支援服務，至今已有數十場活動、講座、線上會議直播經驗，並擁有完善的直播設備，
+          從基本的直播到完整的服務規劃，提供最全面的選擇。
+      #carousel.carousel.slide.carousel-fade(data-ride='carousel')
+        p ※以下皆為直播畫面擷取
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='/assets/img/livestream/1.jpg')
+          .carousel-item
+            img.d-block.w-100(src='/assets/img/livestream/2.jpg')
+          .carousel-item
+            img.d-block.w-100(src='/assets/img/livestream/3.jpg')
+          .carousel-item
+            img.d-block.w-100(src='/assets/img/livestream/4.jpg')
+          .carousel-item
+            img.d-block.w-100(src='/assets/img/livestream/5.jpg')
+        a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carousel', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+      table.table.table-striped.table-dark.m-0
+        thead
+          tr
+            th(scope="col") 
+            th(scope="col") 說明
+            th(scope="col") 價格
+            th(scope="col") 時間
+        tbody
+          tr
+            th(scope="row") 講座直播
+            td 1導播、1固定鏡位、投影畫面擷取、現場音訊擷取
+            td 6,000元
+            td 8小時(內)
+          tr
+            th(scope="row") 活動直播
+            td 1導播、2固定鏡位、投影畫面擷取、現場音訊擷取
+            td 10,000元
+            td 8小時(內)
+          tr
+            th(scope="row") 活動直播
+            td 1導播、1固定鏡位、1移動鏡位、投影畫面擷取、現場音訊擷取
+            td 15,000元
+            td 8小時(內)
+          tr
+            th(scope="row") 線上會議直播
+            td 1導播、1固定鏡位、會議畫面擷取、現場音訊擷取
+            td 18,000元
+            td 4小時(內)
+          tr
+            th(scope="row") 更多服務
+            td(colspan="3") 流程規劃、額外時數等請聯絡洽詢
+      .bg-dark-transparent.p-4
+        p ※以上服務均提供直播畫面錄影，於活動結束後提供一完整錄影檔
+        p ※出班人數依規模而定，基本為1-2人
+        p ※以上價格皆含稅並開立統一發票
+    hr
+    include ../footer.pug

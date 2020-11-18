@@ -1,36 +1,3 @@
-body {
-  font-family: 'Noto Sans TC', sans-serif;
-  background-color: #000;
-  color: #FFF;
-}
-a, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif TC', serif;
-}
-p {
-  color: #AAA;
-  word-break: break-all;
-}
-hr {
-  border-color: rgba(255,255,255,0.2);
-}
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #242A30;
-  outline: 1px solid white;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #dac400;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #CAB400;
-}
-
 #head {
   overflow: hidden;
   height: 100vh;
@@ -70,10 +37,6 @@ hr {
   background-size: cover;
   background-attachment: fixed;
 }
-
-#works .row {
-  margin: 0 20%;
-}
 #works .work-block {
   background-color: rgba(0,0,0,0.5);
   border: 1px solid #666;
@@ -107,26 +70,10 @@ hr {
   text-decoration: none;
 }
 
-#footer {
-  width: 100%;
-}
-
-#footer a {
-  margin: 5px;
-  padding: 5px 10px;
-  color: #AAA;
-}
-
 @media (max-width: 992px) {
-  #works .row {
-    margin: 0 15%;
-  }
 }
 
 @media (max-width: 767px) {
-  #works .row {
-    margin: 0;
-  }
   #works .work-block .img-block {
     filter: grayscale(0%);
   }

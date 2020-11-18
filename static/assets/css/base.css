@@ -1,0 +1,64 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #000;
+  color: #FFF;
+}
+a, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif TC', serif;
+}
+p {
+  color: #AAA;
+  word-break: break-all;
+}
+hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7F7F7F;
+  outline: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EECC00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FEDC00;
+}
+
+#footer {
+  width: 100%;
+}
+
+#footer a {
+  margin: 5px;
+  padding: 5px 10px;
+  color: #AAA;
+}
+
+.bg-dark-transparent {
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.rwd-row {
+  margin: 0 20%;
+}
+
+@media (max-width: 992px) {
+  .rwd-row {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .rwd-row {
+    margin: 0;
+  }
+}
