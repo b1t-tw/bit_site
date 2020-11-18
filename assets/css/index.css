@@ -25,13 +25,17 @@
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
+  color: #FFF;
 }
 #about .row {
   background-color: #000A;
 }
+#about p {
+  color: #FFF;
+}
 
 #works {
-  background-image: url("/assets/img/Waves.png");
+  background-image: url("/assets/img/Waves_w.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -60,6 +64,7 @@
   filter: grayscale(0%);
 }
 #works .work-block p {
+  color: #FFF;
   margin: 1em;
   transition: .3s;
 }
