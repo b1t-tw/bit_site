@@ -1,0 +1,60 @@
+body {
+  background-image: url("/assets/img/Mystery.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFF;
+}
+.work-block {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid #666;
+  transition: .3s;
+}
+.work-block:hover {
+  background-color: rgba(0,0,0,1);
+  border: 1px solid #AAA;
+}
+.work-block .img-block {
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  width: 0;
+  padding-top: 100%;
+  padding-left: 100%;
+  transition: .3s;
+  filter: grayscale(100%);
+}
+.work-block:hover .img-block {
+  filter: grayscale(0%);
+}
+.work-block p {
+  color: #FFF;
+  margin: 1em;
+  transition: .3s;
+}
+.work-block:hover a {
+  text-decoration: none;
+}
+.work-block a:hover {
+  text-decoration: none;
+}
+
+.modal-header {
+  border: 0;
+}
+.modal img {
+  width: 100%;
+}
+.modal p {
+  text-align: justify;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+  .work-block .img-block {
+    filter: grayscale(0%);
+  }
+}
