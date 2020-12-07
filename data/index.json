@@ -3,44 +3,56 @@
     "arts": [{
         "image": "light01.jpg",
         "link": "http://bambooculture.com/residentartist/939",
-        "brief": "2015 「給竹圍的一封信」劇場燈光互動裝置"
+        "brief": "2015 「給竹圍的一封信」劇場燈光互動裝置",
+        "disc": "2015年，健松和駐團藝術家翁惠敏（ANG Hui Bin）將和竹圍的小學生和在地鄉親父老們，集體創作一個劇本並搬演一出偶戲：《給竹圍的一封信》，收集竹圍不為人知的故事並把他們戲劇化和偶戲化，而當時剛踏入藝術圈的任翔，為其中貫徹全劇的「記憶罐子」加上了燈光及可以遙控的變化，讓劇場效果變得更為豐富"
       },
       {
         "image": "tav.jpg",
         "link": "https://youtu.be/AdefyIXJS6w?t=277",
-        "brief": "2018 TAV駐村藝術家 Simone & Tim 舞蹈影像《 交織 》燈光裝置"
+        "brief": "2018 TAV駐村藝術家 Simone & Tim 舞蹈影像《 交織 》燈光裝置",
+        "disc": "2018年在竹圍工作室活動中認識的駐村藝術家 Simone & Tim ，在該季台北國際藝術村的駐村計畫展覽中，除了舞蹈影像創作與聲音藝術創作外，也希望結合能夠隨舞者動作而跟隨變化的燈光裝置，於是由任翔協助規劃設計，並一同製作了一個8*8的LED矩陣天花板，並且每個區塊有一個感應器，因此產生出類似水底又或雲朵般的燈光效果。"
       },
       {
         "image": "TStimeline.png",
         "link": "https://www.youtube.com/watch?v=qY5jbMbehIQ",
-        "brief": "2019《 時 光 軸 | Real Time Lightning》即時特效投影"
-      },
-      {
-        "image": "sunson.png",
-        "brief": "2020 身聲劇場 即時投影劇場特效"
+        "brief": "2019《 時 光 軸 | Real Time Lightning》即時特效投影",
+        "disc": "《TS FIRE GROUP 旋舞炎劇團》是台灣非常資深的火舞團，自2012年從火焰進化為科技光元素並不斷嘗試各種可能，和當時的光軌創曳一直有技術合作關係，並在2019年共同合作發展出一這個以「即時投影」作為核心的創作，利用相機擷取現場表演畫面，透過TouchDesigner加上特效後再即時投影回畫面上形成非常特殊的視覺效果。"
       },
       {
         "image": "hanbeats.jpg",
-        "brief": "2020 街頭打擊燈光裝置"
+        "link": "https://www.facebook.com/Han-Beat%E5%90%B3%E6%89%BF%E7%BF%B0-%E8%A1%97%E9%A0%AD%E6%89%93%E6%93%8A-918224585030993",
+        "brief": "2020 街頭打擊燈光裝置",
+        "disc": "吳承翰使用回收再利用的環保樂器、不插電表演，融合打擊樂技巧及互動元素，帶著觀眾進入不一樣的音樂體驗，探索節奏與樂器的各種可能性。在身聲劇場認識了任翔，由於街頭表演的時間經常會受到時間與環境燈光的限制，於是決定在表演用的各種樂器上安裝燈光，並由任翔協助設計了相對應的感應器與程式，讓樂器與燈光可以隨著節奏舞動，效果非凡。"
       },
       {
         "image": "weizhe.JPG",
-        "brief": "「禽獸不如—2020台灣美術雙年展」魏澤作品感應播放裝置"
+        "link": "https://taiwanbiennial.ntmofa.gov.tw/index.php?page=artist22",
+        "brief": "「禽獸不如—2020台灣美術雙年展」魏澤作品感應播放裝置",
+        "disc": "在這件作品中，魏澤嘗試整合與建構三個部分的體驗與記憶，創造出虛擬的不死怪物，與觀眾對話。而其中展覽作品之一的影像與聲音，透過任翔協助使用了樹梅派作為核心控制器，並搭配感應器讓參觀觀眾在經過作品時，會跳至各種不同段落，而達到一種猶如對話般的效果，而其中動畫部分，乃由合作之 <a href='https://l.facebook.com/l.php?u=http%3A%2F%2Fyuinchenstudio.com%2F%3Ffbclid%3DIwAR0-PNYUpKvTAwvwh1MYqsunfe-TVkpiLTsz0DoqbwQcw0xsZcKwGvKpn7o&h=AT0d1KVRQqwspLsuoKI3ivP_5c8tQQ4qnGoMDKDvlo3z3bX04jqo5WNVT417YHtXJfepBeKRq8n4Gzy3Uk6sm6QHt8r4SrXM_orFsOmyR7AckmnBBRv5miUN2bUWdh-_2CYh0g'>Yuin Chen Studio</a> 所製作。"
+      },
+      {
+        "image": "sunson.png",
+        "link": "https://www.sunsontheatre.com/",
+        "brief": "2021 身聲劇場 即時投影劇場特效",
+        "disc": "身聲是一個透過跨領域表演藝術、啟發人最原初創造力的演藝團隊，透過整合音樂、戲劇、舞蹈、美術等不同領域專長的夥伴，並集體創作，發展出「演樂舞」合一的劇場美學。任翔一直是身聲劇場的合作夥伴，多次參與創作、踩街，將與《TS FIRE GROUP 旋舞炎劇團》合作的經驗帶入劇團，預計於2021年推出全新創作。"
       }
     ],
     "techs": [{
         "image": "pixelmr.jpg",
-        "link": "https://www.railustre.tw",
-        "brief": "光軌創曳 X TS-SHOP pixelMR系列高階表演道具系統"
+        "link": "https://www.facebook.com/404299536278174/videos/1572483282935027",
+        "brief": "光軌創曳 X TS-SHOP pixelMR系列表演道具系統",
+        "disc": "PixelMR是光軌創曳最早也是最為核心的產品，使用STM32F103作為核心開發的控制板，搭配獨立開發之電腦軟體與相對應的韌體，製作出不亞於國際知名led表演道具的道具核心，並與TS-SHOP合作推出PixelMR系列產品，乃是台灣在led表演道具上一個重要的里程碑。"
       },
       {
         "image": "river-watcher.png",
         "link": "https://river-watcher.bambooculture.tw/",
-        "brief": "2019 g0v 公民科技創新獎助金 獲獎計畫 《 大河小溪全民齊督工》"
+        "brief": "2019 g0v 公民科技創新獎助金 獲獎計畫 《 大河小溪全民齊督工》",
+        "disc": "大河小溪全民齊督工地圖平台，於 2019 年獲得 g0v 零時政府的公民科技創新獎助金，試圖透過公民科技降低公私部門之間的資訊落差，並將溪流整治工程相關部門的公開資訊視覺化。這個開源平台讓竹圍工作室長久以來對於環境的關注，有機會進一步對社會機制面造成影響，架構屬於台灣的河川情報系統，並拋出一個公民參與的另類想像。"
       },
       {
         "image": "3d.jpg",
-        "brief": "2018、2019竹圍國小「小小創客」社團"
+        "brief": "2018、2019竹圍國小「小小創客」社團",
+        "disc": "在3d列印與創客風潮興起的時候，任翔也投入了心力進行研究，也曾經自行設計改裝了一台獨一無二的3D列印機，雖然比不上頂級機種的耐用與品質，但這之中的創客精神不言而喻，在2018、19年受到竹圍國小邀請，開設了「小小創客」社團，希望透過多元的教學性質，讓學童接觸「凡事皆可動手做」的創客精神。"
       }
     ]
   }

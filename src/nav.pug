@@ -10,12 +10,11 @@ nav#navbar.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top
     ul.navbar-nav
       if _home
         +navli("#about", "about us")
-        +navli("#works", "our works")
       else
         +navli("/#about", "about us")
-        +navli("/#works", "our works")        
       +navli("#footer", "contacts")
       li.nav-item.dropdown
         a.nav-link.dropdown-toggle(href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") services
         .dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+          a.dropdown-item(href="/creative") 藝創合作
           a.dropdown-item(href="/livestream") 直播技術
