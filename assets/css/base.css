@@ -6,7 +6,9 @@ a, h1, h2, h3, h4, h5, h6 {
 }
 p {
   color: #FFF;
-  word-break: break-all;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 .bg-dark hr {
   border-color: rgba(255,255,255,0.2);
