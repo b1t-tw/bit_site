@@ -24,7 +24,7 @@ html(lang="zh-Hant-TW")
                 .modal-body
                   img(src="/assets/img/creative/"+val['image'])
                   hr
-                  p #{val['disc']}
+                  p !{val['disc']}
                   hr
                   a.btn.btn-outline-light.w-100(role="button", href=val['link'], target="_blank") 相關連結
         mixin work(val, cat, index)
@@ -36,18 +36,8 @@ html(lang="zh-Hant-TW")
         hr
         each val, index in _work_data["arts"]
           +modals(val, "arts", index)
-        each val, index in _work_data["techs"]
-          +modals(val, "techs", index)
           
-        h1.text-center With Arts
-        hr            
         .row.rwd-row.mb-5
           each val, index in _work_data["arts"]
             +work(val, "arts", index)
-        hr
-        h1.text-center With Techs
-        hr            
-        .row.rwd-row.mb-5
-          each val, index in _work_data["techs"]
-            +work(val, "techs", index)
     include ../footer.pug

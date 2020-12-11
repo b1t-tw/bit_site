@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rwd-row {
-  margin: 0 20%;
+  margin: 0 15%;
 }
 
 @media (max-width: 992px) {
   .rwd-row {
-    margin: 0 15%;
+    margin: 0 10%;
   }
 }
 
