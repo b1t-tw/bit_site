@@ -1,4 +1,4 @@
-- _work_data = work_data
+- _arts_data = work_data['arts'].reverse()
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
   include ../header.pug
@@ -34,10 +34,10 @@ html(lang="zh-Hant-TW")
                 .img-block(style="background-image: url(/assets/img/creative/"+val['image']+");")
                 p #{val['brief']}    
         hr
-        each val, index in _work_data["arts"]
+        each val, index in _arts_data
           +modals(val, "arts", index)
           
         .row.rwd-row.mb-5
-          each val, index in _work_data["arts"]
+          each val, index in _arts_data
             +work(val, "arts", index)
     include ../footer.pug
