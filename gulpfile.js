@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const data = require('gulp-data');
 const connect = require('gulp-connect');
+const sitemap = require('gulp-sitemap');
 const fs = require('fs');
 
 gulp.task('server', function () {
@@ -10,16 +11,28 @@ gulp.task('server', function () {
         livereload: true,
         root: 'static'
     })
-    gulp.src('src/**/index.pug').pipe(data(function(file) {
-      console.log("[build] "+file['history']);
-      return JSON.parse(fs.readFileSync('data/index.json'));
-    })).pipe(pug()).pipe(gulp.dest('./static/')).pipe(connect.reload());
-
-    gulp.watch(['src/**/*.pug', 'static/assets/css/*.css', 'static/assets/js/*.js', 'data/*.json'], function(event){
-      gulp.src('src/**/index.pug').pipe(data(function(file) {
+    gulp.src('src/**/index.pug')
+    .pipe(data(function(file) {
         console.log("[build] "+file['history']);
         return JSON.parse(fs.readFileSync('data/index.json'));
-      })).pipe(pug()).pipe(gulp.dest('./static/')).pipe(connect.reload());
+    }))
+    .pipe(pug())
+    .pipe(gulp.dest('./static/'))
+    .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
+    .pipe(gulp.dest('./static/'))
+    .pipe(connect.reload());
+
+    gulp.watch(['src/**/*.pug', 'static/assets/css/*.css', 'static/assets/js/*.js', 'data/*.json'], function(event){
+      gulp.src('src/**/index.pug')
+      .pipe(data(function(file) {
+        console.log("[build] "+file['history']);
+        return JSON.parse(fs.readFileSync('data/index.json'));
+      }))
+      .pipe(pug())
+      .pipe(gulp.dest('./static/'))
+      .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
+      .pipe(gulp.dest('./static/'))
+      .pipe(connect.reload());
       event();
     });
 });
@@ -28,5 +41,9 @@ gulp.task('build', function() {
     gulp.src('src/**/index.pug').pipe(data(function(file) {
       console.log("[build] "+file['history']);
       return JSON.parse(fs.readFileSync('data/index.json'));
-    })).pipe(pug()).pipe(gulp.dest('./static/'));
+    }))
+    .pipe(pug())
+    .pipe(gulp.dest('./static/'))
+    .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
+    .pipe(gulp.dest('./static/'));
 });
