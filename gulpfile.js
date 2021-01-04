@@ -12,9 +12,13 @@ gulp.task('server', function () {
         root: 'static'
     })
     gulp.src('src/**/index.pug')
-    .pipe(data(function(file) {
-        console.log("[build] "+file['history']);
-        return JSON.parse(fs.readFileSync('data/index.json'));
+    .pipe(data((file) => {
+      console.log("[build] "+file['history']);
+      const result = {
+        index: require('./data/index.json'),
+        creatives: require('./data/creatives.json')
+      };
+      return result;
     }))
     .pipe(pug())
     .pipe(gulp.dest('./static/'))
@@ -24,9 +28,13 @@ gulp.task('server', function () {
 
     gulp.watch(['src/**/*.pug', 'static/assets/css/*.css', 'static/assets/js/*.js', 'data/*.json'], function(event){
       gulp.src('src/**/index.pug')
-      .pipe(data(function(file) {
+      .pipe(data((file) => {
         console.log("[build] "+file['history']);
-        return JSON.parse(fs.readFileSync('data/index.json'));
+        const result = {
+          index: require('./data/index.json'),
+          creatives: require('./data/creatives.json')
+        };
+        return result;
       }))
       .pipe(pug())
       .pipe(gulp.dest('./static/'))
@@ -35,15 +43,4 @@ gulp.task('server', function () {
       .pipe(connect.reload());
       event();
     });
-});
-
-gulp.task('build', function() {
-    gulp.src('src/**/index.pug').pipe(data(function(file) {
-      console.log("[build] "+file['history']);
-      return JSON.parse(fs.readFileSync('data/index.json'));
-    }))
-    .pipe(pug())
-    .pipe(gulp.dest('./static/'))
-    .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
-    .pipe(gulp.dest('./static/'));
 });

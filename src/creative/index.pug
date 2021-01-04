@@ -1,4 +1,5 @@
-- _arts_data = work_data['arts'].reverse()
+- _arts_data = index['arts'].reverse()
+- _creatives = creatives
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
   include ../header.pug
@@ -22,7 +23,19 @@ html(lang="zh-Hant-TW")
                   button.close(type='button', data-dismiss='modal', aria-label='Close')
                     span(aria-hidden='true', style="color: #FFF;") ×
                 .modal-body
-                  img(src="/assets/img/creative/"+val['image'])
+                  .carousel.slide.carousel-fade(data-ride="carousel", id=val['image'])
+                    .carousel-indicators
+                      each img, index in _creatives[val['image']]
+                        if index == 0
+                          li.active(data-target="#"+val['image'], data-slide-to=index)
+                        else
+                          li(data-target="#"+val['image'], data-slide-to=index)
+                    .carousel-inner
+                      each img, index in _creatives[val['image']]
+                        if index == 0
+                          .carousel-item.active(style="background-image: url(/assets/img/creative/"+val['image']+"/"+img)
+                        else
+                          .carousel-item(style="background-image: url(/assets/img/creative/"+val['image']+"/"+img)
                   hr
                   p !{val['disc']}
                   hr
@@ -31,7 +44,7 @@ html(lang="zh-Hant-TW")
           .col-md-4.p-2
             .work-block.p-2.h-100
               a(data-toggle="modal" data-target="#"+cat+index href="#")
-                .img-block(style="background-image: url(/assets/img/creative/"+val['image']+");")
+                .img-block(style="background-image: url(/assets/img/creative/"+val['image']+"/"+_creatives[val['image']][0]+");")
                 p #{val['brief']}    
         hr
         each val, index in _arts_data
