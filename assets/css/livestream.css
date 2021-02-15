@@ -9,4 +9,11 @@ body {
   background-color: rgba(0,0,0,0.5);
   padding: 1em;
   border: 1em solid #AAA;
+  padding-bottom: 5em;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-caption {
+  bottom: -5em;
 }
