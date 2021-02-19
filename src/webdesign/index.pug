@@ -8,11 +8,12 @@ html(lang="zh-Hant-TW")
   link(rel="stylesheet" href="/assets/css/webdesign.css")
   body.bg-dark
     include ../nav.pug
-    .container.text-light
-      .bg-dark-transparent.p-4
+    .text-light.bg-dark-transparent
+      .container.p-5.text-center
         h1 網頁設計
         p.
           位元創意提供專業的客製化網頁設計與製作，也協助託管、代管，從前端到後端開發給您最完善的服務。
+    .container.text-light
       .p-2
         mixin modals(val, cat, index)        
           .modal.fade(tabindex='-1', role='dialog', id=cat+index)

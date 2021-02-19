@@ -6,38 +6,39 @@ html(lang="zh-Hant-TW")
   link(rel="stylesheet" href="/assets/css/livestream.css")
   body.bg-dark
     include ../nav.pug
-    .container
-      .bg-dark-transparent.p-4.text-light
+    .text-light.bg-dark-transparent
+      .container.p-5.text-center
         h1 直播技術
         p.
           位元創意提供最實惠的直播技術支援服務，至今已有數十場活動、講座、線上會議直播經驗，並擁有完善的直播設備，
           從基本的直播到完整的服務規劃，提供最全面的選擇。
+    .container
       #carousel.carousel.slide.carousel-fade(data-ride='carousel')
         p ※以下皆為直播畫面擷取
         .carousel-inner
           .carousel-item.active
             img.d-block.w-100(src='/assets/img/livestream/1.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 2021思辨之夜-後疫情時代生活指南
           .carousel-item
             img.d-block.w-100(src='/assets/img/livestream/2.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 2021思辨之夜-後疫情時代生活指南
           .carousel-item
             img.d-block.w-100(src='/assets/img/livestream/3.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 想像中的國度：臺灣與拉丁美洲的交往
           .carousel-item
             img.d-block.w-100(src='/assets/img/livestream/4.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 好菜上桌-田調X策展培力講座
           .carousel-item
             img.d-block.w-100(src='/assets/img/livestream/5.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 竹圍工作室秋季開放日─藝術家座談
           .carousel-item
             img.d-block.w-100(src='/assets/img/livestream/6.jpg')
-            .carousel-caption.d-none.d-md-block
+            .carousel-caption.d-block
               h5 「求你政經點」：不是政論節目，是台泰越藝術生態交流論
         a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
           span.carousel-control-prev-icon(aria-hidden='true')
