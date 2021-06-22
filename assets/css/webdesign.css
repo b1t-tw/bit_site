@@ -1,63 +1,48 @@
-body {
+.bg-dark.bg-box {
   background-image: url("/assets/img/Trianglify.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
+
 .work-block {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #666;
-  transition: .3s;
-}
-.work-block:hover {
-  background-color: rgba(0,0,0,1);
-  border: 1px solid #AAA;
-}
-.work-block .img-block {
-  background-position: center;
-  background-size: cover;
-  height: 0;
-  width: 0;
-  padding-top: 100%;
-  padding-left: 100%;
-  transition: .3s;
-  filter: grayscale(100%);
-}
-.work-block:hover .img-block {
-  filter: grayscale(0%);
-}
-.work-block p {
-  margin: 1em;
-  transition: .3s;
-}
-.work-block:hover a {
-  text-decoration: none;
-}
-.work-block a:hover {
-  text-decoration: none;
-}
+  transition: .3s; }
+  .work-block:hover {
+    background-color: black;
+    border: 1px solid #AAA; }
+  .work-block .img-block {
+    background-position: center;
+    background-size: cover;
+    height: 0;
+    width: 0;
+    padding-top: 100%;
+    padding-left: 100%;
+    transition: .3s;
+    filter: grayscale(100%); }
+  .work-block:hover .img-block {
+    filter: grayscale(0%); }
+  .work-block p {
+    margin: 1em;
+    transition: .3s; }
+  .work-block:hover a, .work-block a:hover {
+    text-decoration: none; }
 
 .modal-header {
-  border: 0;
-}
+  border: 0; }
+
 .modal .carousel-item {
   background-position: center;
   background-size: cover;
   height: 0;
   width: 0;
   padding-top: 56%;
-  padding-left: 100%;
-}
-.modal p {
-  text-align: justify;
-}
+  padding-left: 100%; }
 
-@media (max-width: 992px) {
-}
+.modal p {
+  text-align: justify; }
 
 @media (max-width: 767px) {
   .work-block .img-block {
-    filter: grayscale(0%);
-  }
-}
+    filter: grayscale(0%); } }
