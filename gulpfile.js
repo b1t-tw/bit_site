@@ -1,9 +1,34 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
+const sass = require('gulp-sass');
 const data = require('gulp-data');
 const connect = require('gulp-connect');
 const sitemap = require('gulp-sitemap');
 const fs = require('fs');
+
+function build() {  
+  gulp.src('src/sass/**/*.sass')
+  .pipe(data((file) => {
+    console.log("[build] "+file['history']);
+  }))
+  .pipe(sass.sync().on('error', sass.logError))
+  .pipe(gulp.dest('./static/assets/css'));
+
+  gulp.src('src/pug/**/index.pug')
+  .pipe(data((file) => {
+    console.log("[build] "+file['history']);
+    const result = {
+      index: require('./data/index.json'),
+      creatives: require('./data/creatives.json')
+    };
+    return result;
+  }))
+  .pipe(pug())
+  .pipe(gulp.dest('./static/'))
+  .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
+  .pipe(gulp.dest('./static/'))
+  .pipe(connect.reload());
+}
 
 gulp.task('server', function () {
     connect.server({
@@ -11,36 +36,10 @@ gulp.task('server', function () {
         livereload: true,
         root: 'static'
     })
-    gulp.src('src/**/index.pug')
-    .pipe(data((file) => {
-      console.log("[build] "+file['history']);
-      const result = {
-        index: require('./data/index.json'),
-        creatives: require('./data/creatives.json')
-      };
-      return result;
-    }))
-    .pipe(pug())
-    .pipe(gulp.dest('./static/'))
-    .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
-    .pipe(gulp.dest('./static/'))
-    .pipe(connect.reload());
+    build();
 
-    gulp.watch(['src/**/*.pug', 'static/assets/css/*.css', 'static/assets/js/*.js', 'data/*.json'], function(event){
-      gulp.src('src/**/index.pug')
-      .pipe(data((file) => {
-        console.log("[build] "+file['history']);
-        const result = {
-          index: require('./data/index.json'),
-          creatives: require('./data/creatives.json')
-        };
-        return result;
-      }))
-      .pipe(pug())
-      .pipe(gulp.dest('./static/'))
-      .pipe(sitemap({siteUrl: 'https://b1t.tw'}))
-      .pipe(gulp.dest('./static/'))
-      .pipe(connect.reload());
+    gulp.watch(['src/**/*.pug', 'src/**/*.sass', 'static/assets/js/*.js', 'data/*.json'], function(event){
+      build();
       event();
     });
 });

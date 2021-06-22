@@ -1,19 +1,18 @@
-body {
+.bg-dark.bg-box {
   background-image: url("/assets/img/Elves.png");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
+  background-attachment: fixed; }
+
 #carousel {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;
   border: 1em solid #AAA;
-  padding-bottom: 5em;
-}
+  padding-bottom: 5em; }
+
 .carousel-inner {
-  overflow: visible;
-}
+  overflow: visible; }
+
 .carousel-caption {
-  bottom: -5em;
-}
+  bottom: -5em; }

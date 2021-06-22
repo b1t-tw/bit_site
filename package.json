@@ -6,7 +6,7 @@
   "author": "SeanGau",
   "license": "MIT",
   "scripts": {
-    "start": "gulp server",
+    "start": "node update_data.js;gulp server",
     "build": "node update_data.js"
   },
   "dependencies": {
@@ -14,7 +14,8 @@
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-data": "^1.3.1",
-    "gulp-pug": "^4.0.1"
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0"
   },
   "devDependencies": {
     "gulp-sitemap": "^8.0.0"

@@ -1,0 +1,53 @@
+#head
+  overflow: hidden
+  height: 100vh
+
+#canvas, #canvas2
+  z-index: -999
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+
+#canvasWave
+  z-index: -99
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+
+#about
+  background-image: url("/assets/img/Network.png")
+  background-position: center
+  background-repeat: repeat
+  background-size: cover
+  background-attachment: fixed
+  color: #FFF
+
+  .row
+    background-color: #000A
+    min-height: 10em
+
+  .row
+    .service-block
+      background-position: center
+      background-repeat: repeat
+      background-size: cover
+      font-size: 2em
+      height: 4em
+      line-height: 4em
+      border: 1px solid white
+      opacity: 0.6
+      color: #FFF
+      transition: .3s
+      margin-bottom: .5em
+
+      &:hover
+        opacity: 1
+
+    a:hover
+      text-decoration: none
+
+@media (max-width: 767px)
+  #about .row .service-block
+    opacity: 1

@@ -13,6 +13,6 @@ fs.readdirSync(path).forEach(file => {
         });
     }
 });
-
+console.log(tree);
 var data = JSON.stringify(tree);
 fs.writeFileSync('data/creatives.json', data);

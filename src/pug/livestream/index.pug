@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-html(lang="zh-Hant-TW")
-  include ../header.pug
-  title 位元創意 - 直播技術
-  link(rel="stylesheet" href="/assets/css/base.css")
+extend ../layout.pug
+block variables
+  - title = "直播技術"
+block head
   link(rel="stylesheet" href="/assets/css/livestream.css")
-  body.bg-dark
-    include ../nav.pug
+block body
+  .bg-dark.bg-box
     .text-light.bg-dark-transparent
       .container.p-5.text-center
-        h1 直播技術
+        h1= title
         p.
           位元創意提供最實惠的直播技術支援服務，至今已有數十場活動、講座、線上會議直播經驗，並擁有完善的直播設備，
           從基本的直播到完整的服務規劃，提供最全面的選擇。
@@ -86,5 +85,4 @@ html(lang="zh-Hant-TW")
         p ※以上服務均提供直播畫面錄影，於活動結束後提供一完整錄影檔
         p ※出班人數依規模而定，基本為2人
         p ※以上價格皆含稅並開立統一發票
-    hr
-    include ../footer.pug
+
