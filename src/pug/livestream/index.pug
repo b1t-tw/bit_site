@@ -39,12 +39,12 @@ block body
             img.d-block.w-100(src='/assets/img/livestream/6.jpg')
             .carousel-caption.d-block
               h5 「求你政經點」：不是政論節目，是台泰越藝術生態交流論
-        a.carousel-control-prev(href='#carousel', role='button', data-slide='prev')
+        button.carousel-control-prev(type='button' data-bs-target='#carousel' data-bs-slide='prev')
           span.carousel-control-prev-icon(aria-hidden='true')
-          span.sr-only Previous
-        a.carousel-control-next(href='#carousel', role='button', data-slide='next')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carousel' data-bs-slide='next')
           span.carousel-control-next-icon(aria-hidden='true')
-          span.sr-only Next
+          span.visually-hidden Next
       table.table.table-striped.table-dark.m-0
         thead
           tr
@@ -61,22 +61,17 @@ block body
           tr
             th(scope="row") 活動直播
             td 1導播、2固定鏡位、投影畫面擷取、現場音訊擷取
-            td 14,000元
+            td 10,000元
             td 4小時(內)
           tr
             th(scope="row") 活動直播
             td 1導播、1固定鏡位、1移動鏡位、投影畫面擷取、現場音訊擷取
-            td 18,000元
-            td 4小時(內)
-          tr
-            th(scope="row") 活動直播
-            td 1導播、2固定鏡位、1移動鏡位、投影畫面擷取、現場音訊擷取
-            td 22,000元
+            td 14,000元
             td 4小時(內)
           tr
             th(scope="row") 線上會議直播
             td 1導播、1固定鏡位、線上會議畫面擷取、現場音訊擷取
-            td 22,000元
+            td 18,000元
             td 4小時(內)
           tr
             th(scope="row") 更多服務
