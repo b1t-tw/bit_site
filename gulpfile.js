@@ -7,6 +7,7 @@ const sitemap = require('gulp-sitemap');
 const fs = require('fs');
 
 function build() {  
+  let build_time = new Date().getTime();
   gulp.src('src/sass/**/*.sass')
   .pipe(data((file) => {
     console.log("[build] "+file['history']);
@@ -19,7 +20,8 @@ function build() {
     console.log("[build] "+file['history']);
     const result = {
       index: require('./data/index.json'),
-      creatives: require('./data/creatives.json')
+      creatives: require('./data/creatives.json'),
+      timestamp: build_time
     };
     return result;
   }))
