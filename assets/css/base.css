@@ -1,52 +1,69 @@
 body {
-  font-family: 'Noto Sans TC', sans-serif; }
+  font-family: "Noto Sans TC", sans-serif;
+}
 
 a, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif TC', serif;
-  text-decoration: none; }
+  font-family: "Noto Serif TC", serif;
+  text-decoration: none;
+}
 
 p {
-  color: #FFF; }
+  color: #FFF;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .bg-dark hr {
-  border-color: rgba(255, 255, 255, 0.2); }
+  border-color: rgba(255, 255, 255, 0.2);
+}
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px; }
+  height: 5px;
+}
 
 ::-webkit-scrollbar-track {
   background: #7F7F7F;
-  outline: 1px solid white; }
+  outline: 1px solid white;
+}
 
 ::-webkit-scrollbar-thumb {
-  background: #EECC00; }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #FEDC00; }
+  background: #EECC00;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FEDC00;
+}
 
 #footer {
-  width: 100%; }
-  #footer a {
-    color: white;
-    margin: 5px;
-    padding: 5px 10px; }
-    #footer a:link:hover, #footer a:visited:hover {
-      color: #DDD; }
+  width: 100%;
+}
+#footer a {
+  color: white;
+  margin: 5px;
+  padding: 5px 10px;
+}
+#footer a:link:hover, #footer a:visited:hover {
+  color: #DDD;
+}
 
 .bg-dark-transparent {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .rwd-row {
-  margin: 0 15%; }
+  margin: 0 15%;
+}
 
 @media (max-width: 992px) {
   .rwd-row {
-    margin: 0 10%; } }
-
+    margin: 0 10%;
+  }
+}
 @media (max-width: 767px) {
   .rwd-row {
-    margin: 0; } }
+    margin: 0;
+  }
+}
