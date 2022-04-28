@@ -42,7 +42,7 @@ block body
                   a.btn.btn-outline-light.w-100(role="button", href=val['link'], target="_blank") 相關連結
         mixin work(val, cat, index)
           .col-md-4.p-2
-            .work-block.p-2.h-100: div
+            .work-block.p-2.h-100(data-aos="fade-up" data-aos-delay=(index%3)*100): div
               a(data-bs-toggle="modal" data-bs-target="#"+cat+index href="#")
                 .img-block(style="background-image: url(/assets/img/creative/"+val['image']+"/"+_creatives[val['image']][0]+");")
                 p #{val['brief']}    
