@@ -56,6 +56,18 @@
     ],
     "webdesign": [
         {
+            "image": "mirror",
+            "link": "https://mirror.tasatw.org/zh_tw/",
+            "brief": "《鏡子》療癒工藝線上展",
+            "disc": "《鏡子》療癒工藝線上展邀請8位藝術家回看自己創作的核心，試著將情緒感官化，以直觀的方式產出。在哲學思辨中更認識自己，在光影中尋找歸屬感，在冥想中紀錄生活的不同情境與狀態，也思考面對關係的修復，如何讓受傷的心走向癒合。在原初、投射和轉化之間來回走動。"
+        },
+        {
+            "image": "hakka",
+            "link": "https://habit.ssl.thcp.org.tw/",
+            "brief": "那是種習慣 線上展",
+            "disc": "習慣，可說是身體直覺的反應。反應源於日常生活中未注意的行為積累，時間久了，身體產生記憶、逐漸內化。當行為變成不經意地習慣動作後，我們也就不再關注其中的細節。"
+        },
+        {
             "image": "strangepinglin",
             "link": "https://strangepinglin.collective.tw/",
             "brief": "坪林尋怪地圖",
