@@ -6,15 +6,18 @@ const connect = require('gulp-connect');
 const sitemap = require('gulp-sitemap');
 const fs = require('fs');
 
-function build() {  
-  let build_time = new Date().getTime();
+function buildSass() {
   gulp.src('src/sass/**/*.sass')
   .pipe(data((file) => {
     console.log("[build] "+file['history']);
   }))
   .pipe(sass.sync().on('error', sass.logError))
-  .pipe(gulp.dest('./static/assets/css'));
+  .pipe(gulp.dest('./static/assets/css'))
+  .pipe(connect.reload());
+}
 
+function buildPug() {  
+  let build_time = new Date().getTime();
   gulp.src('src/pug/**/index.pug')
   .pipe(data((file) => {
     console.log("[build] "+file['history']);
@@ -38,10 +41,12 @@ gulp.task('server', function () {
         livereload: true,
         root: 'static'
     })
-    build();
-
+    buildSass();
+    buildPug();
+    gulp.watch(['src/**/*.sass',], function(event){
+      buildSass();
+    });
     gulp.watch(['src/**/*.pug', 'src/**/*.sass', 'static/assets/js/*.js', 'data/*.json'], function(event){
-      build();
-      event();
+      buildPug();
     });
 });
