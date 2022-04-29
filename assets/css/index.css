@@ -34,7 +34,7 @@
 #about .row .service-block {
   background-position: center;
   background-repeat: repeat;
-  background-size: cover;
+  background-size: 100%;
   font-size: 2em;
   height: 4em;
   line-height: 4em;
@@ -46,6 +46,7 @@
 }
 #about .row .service-block:hover {
   opacity: 1;
+  background-size: 105%;
 }
 #about .row a:hover {
   text-decoration: none;
