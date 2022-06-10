@@ -1,9 +1,13 @@
 body {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "jf-jinxuanlatte", sans-serif;
 }
 
-a, h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Serif TC", serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "jf-jinxuan", serif;
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -17,6 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-dark hr {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.jf-loading body {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.jf-active body {
+  opacity: 1;
+  visibility: visible;
+}
+
+.jf-inactive body {
+  opacity: 1;
+  visibility: visible;
 }
 
 ::-webkit-scrollbar {
