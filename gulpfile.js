@@ -45,8 +45,10 @@ gulp.task('server', function () {
     buildPug();
     gulp.watch(['src/**/*.sass',], function(event){
       buildSass();
+      event();
     });
     gulp.watch(['src/**/*.pug', 'src/**/*.sass', 'static/assets/js/*.js', 'data/*.json'], function(event){
       buildPug();
+      event();
     });
 });
