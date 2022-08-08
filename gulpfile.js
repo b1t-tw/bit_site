@@ -35,9 +35,9 @@ function buildPug() {
   .pipe(connect.reload());
 }
 
-gulp.task('build', function() {
-  buildSass();
-  buildPug();
+gulp.task('build', async() => {
+  await buildSass();
+  await buildPug();
 });
 
 gulp.task('server', function () {
