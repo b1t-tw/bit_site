@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node update_data.js;gulp server",
-    "build": "node update_data.js"
+    "build": "node update_data.js;gulp build"
   },
   "dependencies": {
     "fs": "0.0.1-security",

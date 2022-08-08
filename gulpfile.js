@@ -35,6 +35,11 @@ function buildPug() {
   .pipe(connect.reload());
 }
 
+gulp.task('build', function() {
+  buildSass();
+  buildPug();
+});
+
 gulp.task('server', function () {
     connect.server({
         port: 3000,
