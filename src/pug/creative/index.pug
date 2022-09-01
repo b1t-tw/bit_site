@@ -35,9 +35,11 @@ block body
                     .carousel-inner
                       each img, index in _creatives[val['image']]
                         if index == 0
-                          .carousel-item.active(style="background-image: url(/assets/img/creative/"+val['image']+"/"+img)
+                          .carousel-item.ratio.ratio-16x9.active
+                            img(src="/assets/img/creative/"+val['image']+"/"+img, alt="")
                         else
-                          .carousel-item(style="background-image: url(/assets/img/creative/"+val['image']+"/"+img)
+                          .carousel-item.ratio.ratio-16x9
+                            img(src="/assets/img/creative/"+val['image']+"/"+img, alt="")
                   hr
                   p !{val['disc']}
                   hr
