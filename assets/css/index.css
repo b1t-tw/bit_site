@@ -28,7 +28,7 @@
   color: #FFF;
 }
 #about .row {
-  background-color: #000A;
+  background-color: rgba(0, 0, 0, 0.6666666667);
   min-height: 10em;
 }
 #about .row .service-block {
