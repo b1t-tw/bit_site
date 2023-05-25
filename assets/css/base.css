@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #7F7F7F;
+  background: var(--bs-gray-400);
   outline: 1px solid white;
 }
 
@@ -42,14 +42,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
   width: 100%;
+  background: linear-gradient(30deg, var(--bs-gray-800), var(--bs-gray-900));
 }
 #footer a {
   color: white;
-  margin: 5px;
-  padding: 5px 10px;
 }
 #footer a:link:hover, #footer a:visited:hover {
-  color: #DDD;
+  color: var(--bs-gray-400);
+}
+#footer .business-info {
+  color: var(--bs-gray-200);
 }
 
 .bg-dark-transparent {
