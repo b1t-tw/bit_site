@@ -1,29 +1,23 @@
 {
-  "name": "b1t",
+  "name": "bit_site",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
-  "author": "SeanGau",
-  "license": "MIT",
-  "engines" : { 
-    "npm" : ">=8.0.0",
-    "node" : ">=16.0.0"
-  },
   "scripts": {
     "start": "node update_data.js;gulp server",
     "build": "node update_data.js;gulp build"
   },
+  "author": "",
+  "license": "MIT",
+  "description": "",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "gulp": "^4.0.2",
+    "fs": "^0.0.1-security",
+    "gulp": "^5.0.0",
     "gulp-connect": "^5.7.0",
     "gulp-data": "^1.3.1",
-    "gulp-pug": "^4.0.1",
-    "node-sass": "^6.0.1"
-  },
-  "devDependencies": {
-    "gulp-sass": "^5.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sitemap": "^8.0.0",
-    "sass": "^1.39.0"
+    "node-sass": "^9.0.0",
+    "sass": "^1.79.5"
   }
 }
